@@ -26,5 +26,29 @@
     border-bottom: 1px  solid  black;
 
 }
-
+.up-left{
+    font-size: 14px;
+    cursor:pointer;
+}
+.up-left:hover{
+    text-decoration: underline;
+}
+.up-center{
+    display: flex;
+    flex-direction: row;
+    cursor:pointer;
+}
+.hamburger-menù-mobile{
+    width:30px;
+    display:none;
+    margin-bottom:12px;
+}
+.logo{
+    display: flex;
+    height:25px;
+}
+.up-right{
+    font-size:14px;
+    cursor:pointer;
+}
 
