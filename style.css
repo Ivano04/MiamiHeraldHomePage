@@ -1,0 +1,30 @@
+.body{
+    height: 2800px;
+    width:90%;
+    padding-right: 50px;
+    padding-left: 50px;
+    overflow-x: hidden;
+
+}
+
+.header{
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    width:90%;
+    height:90px;
+    position: fixed;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #d6d3d3;
+}
+.sup-header{
+    padding-top: 8px;
+    height:42px;
+    background-color: #f9f9f9;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px  solid  black;
+
+}
+
+
