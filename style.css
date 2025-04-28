@@ -174,7 +174,9 @@
 .article-division-grid-mobile{
     display: none;
 }
-
+.third-website-grid-mobile{
+    display:none;
+}
 @media(max-width: 920px){
     .nav-bar, .bottom-right, .bottom-left, .up-left{
         display: none;
@@ -206,5 +208,24 @@
         display: grid;
         grid-template-columns: 1fr;
         gap:20px;
+    }
+    .third-website-grid-mobile{
+        margin-top: 20px;
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .article-structure-grid-mobile{
+        font-family: Verdana, sans-serif;
+        display:grid;
+        margin-right: 7px;
+        grid-template-columns: 50% 50%;
+        gap:20px;
+    }
+    .box-mobile{
+        background-color: #e8e4e4;
+        padding: 0 20px 10px 0;
+    }
+    .box-mobile img{
+        max-height: 170px;
     }
 }
