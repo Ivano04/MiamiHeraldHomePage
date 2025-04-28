@@ -11,7 +11,7 @@
     margin-top: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    width:92%;
+    width:90%;
     height:90px;
     position: fixed;
     background-color: #f9f9f9;
@@ -173,4 +173,28 @@
 }
 .article-division-grid-mobile{
     display: none;
+}
+
+@media(max-width: 920px){
+    .nav-bar, .bottom-right, .bottom-left, .up-left{
+        display: none;
+    }
+    .sup-header{
+        border-bottom: none;
+        height:50px;
+    }
+    .bottom-left{
+        flex-direction: column;
+        float: left;
+    }
+    .header{
+        height: 42px;
+    }
+    .hamburger-menù-mobile{
+        display:flex;
+        margin-top: -10px;
+    }
+    .first-website-grid{
+        grid-template-columns: 1fr;
+    }
 }
