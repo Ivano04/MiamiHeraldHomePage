@@ -197,4 +197,14 @@
     .first-website-grid{
         grid-template-columns: 1fr;
     }
+    .article-division-grid{
+        display:none;
+        grid-template-columns: 1fr;
+    }
+    .article-division-grid-mobile{
+        background-color: #e8e4e4;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
 }
