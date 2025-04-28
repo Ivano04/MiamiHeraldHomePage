@@ -177,6 +177,16 @@
 .third-website-grid-mobile{
     display:none;
 }
+.extra{
+    margin-top: 30px;
+    font-family: Verdana, sans-serif;
+    height:50px;
+    border-bottom: 1px solid #a5a0a0;
+    color: #1F2933;
+    font-weight: bold;
+    font-size: 25px;
+
+}
 @media(max-width: 920px){
     .nav-bar, .bottom-right, .bottom-left, .up-left{
         display: none;
@@ -227,5 +237,17 @@
     }
     .box-mobile img{
         max-height: 170px;
+    }
+}
+@media(max-width: 600px){
+    .second-website-grid{
+        grid-template-columns: 1fr;
+    }
+    .article-structure-grid-mobile{
+        grid-template-columns: 1fr;
+        margin-right:0;
+    }
+    .box-mobile{
+        padding:14px;
     }
 }
