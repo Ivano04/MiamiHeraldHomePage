@@ -185,7 +185,24 @@
     color: #1F2933;
     font-weight: bold;
     font-size: 25px;
-
+}
+.low-greed{
+    font-family: Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    margin-top: 20px;
+}
+.section{
+    background-color: #e8e4e4;
+    display: grid;
+    .other-features{
+        margin-top: 20px;
+    }
+    padding: 10px;
+}
+.section img{
+    max-height: 200px;
 }
 @media(max-width: 920px){
     .nav-bar, .bottom-right, .bottom-left, .up-left{
@@ -237,6 +254,12 @@
     }
     .box-mobile img{
         max-height: 170px;
+    }
+    .low-greed{
+        grid-template-columns: 1fr 1fr;
+    }
+    .low-greed img{
+        max-height: 140px;
     }
 }
 @media(max-width: 600px){
