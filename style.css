@@ -1,4 +1,5 @@
 .body{
+    background-color: white;
     height: 2800px;
     width:90%;
     padding-right: 50px;
@@ -163,6 +164,7 @@
     gap:20px;
     overflow:hidden;
 }
+
 .box{
     display:flex;
     flex-direction: column;
@@ -265,8 +267,11 @@
 /* implementazione menù a tendina*/
 /* Sidebar Menu */
 .sidebar-menu {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #1F2933;
     position: fixed;
-    top: 98px;
+    top: 87px;
     left: -320px;
     width: 300px;
     height: 100%;
@@ -320,12 +325,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+
 }
 
 .featured-item img {
     width:60%;
     object-fit: contain;
     margin-right: 10px;
+
 }
 
 @media(max-width: 920px){
@@ -336,7 +343,7 @@
         display: none;
     }
     .sup-header{
-        border-bottom: none;
+        border-bottom: 1px #e4e3e3 solid;
         height:50px;
     }
     .bottom-left{
@@ -345,6 +352,7 @@
     }
     .header{
         height: 42px;
+
     }
     .hamburger-menù-mobile{
         display:flex;
@@ -352,6 +360,8 @@
     }
     .first-website-grid{
         grid-template-columns: 1fr;
+        margin-right: -7px;
+
     }
     .article-division-grid{
         display:none;
@@ -367,6 +377,10 @@
         margin-top: 20px;
         display:grid;
         grid-template-columns: 1fr;
+
+    }
+    .article-structure-grid{
+        margin-right: 7px;
     }
     .article-structure-grid-mobile{
         font-family: Verdana, sans-serif;
@@ -377,7 +391,9 @@
     }
     .box-mobile{
         background-color:  #f9f9f9;
-        padding: 0 20px 10px 0;
+        padding: 20px 20px 10px 20px;
+        margin-right: 12px;
+
     }
     .box-mobile img{
         max-height: 170px;
@@ -390,7 +406,18 @@
     }
 }
 @media(max-width: 600px){
+    .body{
+        margin-left: -20px;
+    }
+    .second-website-grid{
+        margin-right: -6px;
+    }
+    .third-website-grid-mobile{
+        margin-right: -11px;
+
+    }
     .sidebar-menu{
+        margin-top: -30px;
         width: 100%;
         left:-100%;
     }
