@@ -371,7 +371,6 @@
         background-color:  #f9f9f9;
         display: grid;
         grid-template-columns: 1fr;
-        gap:20px;
     }
     .third-website-grid-mobile{
         margin-top: 20px;
@@ -385,14 +384,14 @@
     .article-structure-grid-mobile{
         font-family: Verdana, sans-serif;
         display:grid;
-        margin-right: 7px;
+        margin-right: 9px;
         grid-template-columns: 50% 50%;
-        gap:20px;
+        gap:15px;
     }
     .box-mobile{
         background-color:  #f9f9f9;
         padding: 20px 20px 10px 20px;
-        margin-right: 12px;
+        margin-right: 7px;
 
     }
     .box-mobile img{
@@ -403,6 +402,9 @@
     }
     .low-greed img{
         max-height: 130px;
+    }
+    .sidebar-menu{
+        margin-top: -30px;
     }
 }
 @media(max-width: 600px){
