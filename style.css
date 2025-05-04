@@ -3,11 +3,10 @@
     height: 2800px;
     width:90%;
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 70px;
     overflow-x: hidden;
 
 }
-
 .header{
     margin-top: -10px;
     font-family: Arial, sans-serif;
@@ -17,6 +16,7 @@
     position: fixed;
     background-color: #f9f9f9;
     border-bottom: 1px solid #d6d3d3;
+    z-index: 100;
 }
 .sup-header{
     padding-top: 8px;
@@ -190,6 +190,80 @@
     font-weight: bold;
     font-size: 25px;
 }
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: -20px 20px;
+}
+
+.video-section {
+    padding: 20px 0;
+}
+
+.video-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.video-layout {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.main-video {
+    flex: 1;
+    max-width: 750px;
+    max-height: 300px;
+    aspect-ratio: 16 / 9;
+    background: black;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.main-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-sidebar {
+    width: 200px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+.video-item {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+.thumbnail-fake {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 13px;
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .low-greed{
     font-family: Verdana, sans-serif;
     display: grid;
@@ -336,6 +410,9 @@
 }
 
 @media(max-width: 920px){
+    .body{
+        padding-left: 30px;
+    }
     .logo{
         height:70px;
     }
@@ -396,6 +473,37 @@
     }
     .box-mobile img{
         max-height: 170px;
+    }
+    .video-layout {
+        flex-direction: column;
+    }
+
+    .main-video {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .video-sidebar {
+        width: 100%;
+        flex-direction: row;          /* cambia da colonna a riga */
+        overflow-x: auto;             /* scroll orizzontale se serve */
+        overflow-y: hidden;
+        gap: 8px;
+        max-height: none;
+    }
+
+    .video-item {
+        min-width: 160px;             /* larghezza minima per ogni mini-video */
+        flex-shrink: 0;               /* impedisce che si restringano troppo */
+    }
+
+    .video-item img {
+        height: 90px;
+    }
+
+    .caption {
+        font-size: 12px;
+        padding: 4px;
     }
     .low-greed{
         grid-template-columns: 1fr 1fr;
