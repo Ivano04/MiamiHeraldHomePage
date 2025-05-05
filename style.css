@@ -1,19 +1,18 @@
 .body{
     background-color: white;
     height: 2800px;
-    width:90%;
-    padding-right: 50px;
-    padding-left: 70px;
-    overflow-x: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
 
 }
 .header{
-    margin-top: -10px;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    width:90%;
+    width:100%;
     height:90px;
     position: fixed;
+    left:0;
+    margin:0;
     background-color: #f9f9f9;
     border-bottom: 1px solid #d6d3d3;
     z-index: 100;
@@ -234,6 +233,7 @@
     flex-direction: column;
     gap: 12px;
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 .video-item {
@@ -288,7 +288,11 @@
     padding: 40px 20px 20px;
     font-family: sans-serif;
     font-size: 18px;
-    margin-top: 20px;
+    margin: 20px 0;
+    width:100%;
+    left:0;
+    position: absolute;
+
 }
 
 .footer-columns {
@@ -542,6 +546,9 @@
         padding:14px;
     }
     .low-greed{
+        grid-template-columns: 1fr;
+    }
+    .footer-columns{
         grid-template-columns: 1fr;
     }
 }
