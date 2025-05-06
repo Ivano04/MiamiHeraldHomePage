@@ -1,8 +1,8 @@
 .body{
-    background-color: white;
     height: 2800px;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #f9f9f9;
 
 }
 .header{
@@ -90,7 +90,7 @@
 }
 
 .first-website-grid{
-    background-color: white;
+
     margin-top: 30px;
     display: grid;
     grid-template-columns: 66% 32.5%;
@@ -99,9 +99,15 @@
 }
 .article-structure-grid{
     font-family: Verdana, sans-serif;
-    background-color:  #f9f9f9;
+    background-color:  white;
     display: grid;
-    padding: 15px;
+    padding:15px;
+
+}
+.article-structure-grid-2{
+    font-family: Verdana, sans-serif;
+    background-color:  white;
+    display: grid;
 }
 .topic{
     color:#4B5972;
@@ -126,7 +132,7 @@
     width:100%;
 }
 .second-website-grid{
-    background-color: white;
+
     margin-top: 20px;
     display: grid;
     grid-template-columns: 33% 65.5%;
@@ -161,15 +167,19 @@
 }
 .article-division-grid{
     display: grid;
-    grid-template-columns: 47.5% 51%;
+    grid-template-columns: 47.5% 50%;
     gap:20px;
     overflow:hidden;
+    background-color: #f9f9f9;
 }
 
 .box{
     display:flex;
     flex-direction: column;
+    background-color: white;
+    padding:20px;
 }
+
 .grid-topic{
     margin-top: 10px;
     color:#4B5972;
@@ -192,9 +202,10 @@
     font-size: 25px;
 }
 .container {
-    max-width: 1550px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: -20px 20px;
+    padding: 0 20px;
+
 }
 
 .video-section {
@@ -209,17 +220,15 @@
 .video-layout {
     display: flex;
     gap: 16px;
-    align-items: flex-start;
+    height: 400px; /* altezza fissa del blocco intero */
 }
 
 .main-video {
     flex: 1;
-    max-width: 750px;
-    max-height: 300px;
-    aspect-ratio: 16 / 9;
     background: black;
     border-radius: 6px;
     overflow: hidden;
+    height: 100%; /* riempie altezza del container */
 }
 
 .main-video video {
@@ -230,15 +239,18 @@
 
 .video-sidebar {
     width: 200px;
-    max-height: 300px;
+    height: 100%;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    overflow-y: auto;
-    overflow-x: auto;
+    flex-shrink: 0;
 }
 
+
 .video-item {
+    height: 90px; /* fissa l’altezza */
+    flex: 0 0 auto; /* non cresce, non si restringe */
     position: relative;
     border-radius: 6px;
     overflow: hidden;
@@ -246,14 +258,12 @@
     cursor: pointer;
 }
 
-
 .thumbnail-fake {
     width: 100%;
-    height: 90px;
+    height: 100%; /* ora prende tutta l'altezza assegnata al video-item */
     background-color: black;
     border-radius: 4px;
 }
-
 
 .caption {
     position: absolute;
@@ -275,7 +285,7 @@
 }
 
 .section{
-    background-color:  #f9f9f9;
+    background-color:  white;
     display: grid;
     .other-features{
         margin-top: 20px;
@@ -486,25 +496,27 @@
     }
     .video-layout {
         flex-direction: column;
+        height: auto;
     }
 
     .main-video {
         width: 100%;
-        max-height: 250px;
+        max-width: 100%;
+        height: auto;
     }
 
     .video-sidebar {
         width: 100%;
-        flex-direction: row;          /* cambia da colonna a riga */
-        overflow-x: auto;             /* scroll orizzontale se serve */
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
         overflow-y: hidden;
-        gap: 8px;
-        max-height: none;
+        padding-bottom: 8px;
     }
 
     .video-item {
-        min-width: 160px;             /* larghezza minima per ogni mini-video */
-        flex-shrink: 0;               /* impedisce che si restringano troppo */
+        min-width: 160px;
+        flex-shrink: 0;
     }
 
     .video-item img {
