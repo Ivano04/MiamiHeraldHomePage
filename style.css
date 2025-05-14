@@ -8,6 +8,7 @@ img{
     max-width: 100%;
     height: auto;
     display: block;
+    overflow: hidden;
 }
 .header{
     font-family: Arial, sans-serif;
@@ -97,7 +98,7 @@ img{
     font-family: Verdana, sans-serif;
     margin-top: 55px;
     display: grid;
-    grid-template-columns: 66% 32.5%;
+    grid-template-columns: 67.75% 32.5%;
     row-gap: 20px;
     column-gap: 20px;
 }
@@ -171,7 +172,7 @@ img{
 }
 .article-division-grid{
     display: grid;
-    grid-template-columns: 47.5% 50%;
+    grid-template-columns: 50% 50%;
     gap:20px;
     background-color: #f9f9f9;
 }
@@ -180,7 +181,7 @@ img{
     display:flex;
     flex-direction: column;
     background-color: white;
-    padding:20px;
+    padding: 20px;
 }
 
 .grid-topic{
@@ -497,21 +498,18 @@ img{
         grid-template-columns: 1fr;
 
     }
-    .article-structure-grid{
-        margin-right: 7px;
-    }
+
     .article-structure-grid-mobile{
         font-family: Verdana, sans-serif;
+        width:100%;
         display:grid;
         margin-right: 9px;
-        grid-template-columns: 49% 50%;
+        grid-template-columns: 1fr 1fr;
         gap:20px;
     }
     .box-mobile{
         background-color:  white;
         padding: 20px 20px 10px 20px;
-        margin-right: 7px;
-
     }
     .box-mobile img{
         height:auto;
