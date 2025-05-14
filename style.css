@@ -1,5 +1,4 @@
 .body{
-
     max-width: 1000px;
     margin: 0 auto;
     background-color: #f9f9f9;
@@ -12,7 +11,6 @@ img{
 }
 .header{
     font-family: Arial, sans-serif;
-    box-sizing: border-box;
     width:100%;
     height:90px;
     position: fixed;
@@ -28,7 +26,7 @@ img{
     background-color: #f9f9f9;
     display:flex;
     justify-content: center;
-    gap:17%;
+    gap:260px;
     border-bottom: 1px  solid  black;
 
 }
@@ -63,7 +61,7 @@ img{
     height:39px;
     display: flex;
     justify-content: center;
-    gap:6.5%;
+    gap:100px;
 
 }
 .bottom-left{
@@ -98,7 +96,7 @@ img{
     font-family: Verdana, sans-serif;
     margin-top: 55px;
     display: grid;
-    grid-template-columns: 67.75% 32.5%;
+    grid-template-columns: 2fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
 }
@@ -140,11 +138,11 @@ img{
     width:100%;
 }
 .second-website-grid{
+    width: 98%;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 33% 65.5%;
-    column-gap: 20px;
-    row-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
 
 .Latest-News{
@@ -443,9 +441,7 @@ img{
         width:100%;
         height:auto;
     }
-    .body{
-        padding-left: 30px;
-    }
+
     .logo{
         height:70px;
     }
@@ -457,6 +453,7 @@ img{
         height: 50px;
         display: flex;
         justify-content: space-between;
+        gap:0;
 
     }
     .bottom-left{
@@ -473,7 +470,7 @@ img{
     .first-website-grid{
         margin-top: 25px;
         grid-template-columns: 1fr;
-        margin-right: -7px;
+        margin-right: 0;
     }
     .article-structure-grid-nested{
         display: none;
@@ -483,6 +480,7 @@ img{
         grid-template-columns: 1fr;
     }
     .second-website-grid{
+        width:100%;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -496,14 +494,11 @@ img{
         margin-top: 20px;
         display:grid;
         grid-template-columns: 1fr;
-
     }
 
     .article-structure-grid-mobile{
         font-family: Verdana, sans-serif;
-        width:100%;
         display:grid;
-        margin-right: 9px;
         grid-template-columns: 1fr 1fr;
         gap:20px;
     }
@@ -563,13 +558,7 @@ img{
     .body{
         margin-left: -20px;
     }
-    .second-website-grid{
-        margin-right: -6px;
-    }
-    .third-website-grid-mobile{
-        margin-right: -11px;
 
-    }
     .sidebar-menu{
         margin-top: -30px;
         width: 100%;
