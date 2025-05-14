@@ -1,5 +1,5 @@
 .body{
-    height: 2800px;
+
     max-width: 1000px;
     margin: 0 auto;
     background-color: #f9f9f9;
@@ -34,7 +34,6 @@ img{
 .up-left{
     font-size: 14px;
     cursor:pointer;
-
 }
 .up-left:hover{
     text-decoration: underline;
@@ -305,7 +304,7 @@ img{
     margin-bottom: -10px;
 }
 .site-footer {
-    background-color: #f9f9f9;
+    background-color: white;
     color: #333;
     padding: 40px 20px 20px;
     font-family: sans-serif;
@@ -357,12 +356,12 @@ img{
 }
 
 .footer-bottom {
-    background-color: white;
+    height: 30px;
+    background-color: #f9f9f9;
     text-align: center;
     font-size: 15px;
     color: #1F2933;
     font-weight: bold;
-    border-top: 1px solid #ccc;
     padding-top: 15px;
 
 
@@ -438,7 +437,7 @@ img{
 
 }
 
-@media(max-width: 920px){
+@media(max-width: 1020px){
     main img{
         width:100%;
         height:auto;
